@@ -5,8 +5,7 @@ void findWaitingTime(int processes[], int n,int bt[], int wt[])
 	for (int i = 1; i < n ; i++ )
 		wt[i] = bt[i-1] + wt[i-1] ;
 }
-void findTurnAroundTime( int processes[], int n,
-				int bt[], int wt[], int tat[])
+void findTurnAroundTime( int processes[], int n,int bt[], int wt[], int tat[])
 {
 	for (int i = 0; i < n ; i++)
 		tat[i] = bt[i] + wt[i];
